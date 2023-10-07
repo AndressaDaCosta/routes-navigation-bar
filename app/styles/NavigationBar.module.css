@@ -1,9 +1,12 @@
-/* styles/NavigationBar.module.css */
 .navBar {
 	display: flex;
-	background-color: #c1c1c1;
+	background-color: #24303e;
 	justify-content: center;
 	align-items: center;
+	max-width: 215px;
+	margin: 0 auto;
+	border-radius: 6px;
+	margin-top: 20px;
 }
 
 .navBar ul {
@@ -14,17 +17,17 @@
 }
 
 .navBar li {
-	margin-right: 20px;
+	/* margin-right: 20px; */
 }
 
 .active button {
-	background-color: yellow;
-	color: #000000;
+	background-color: #f9c80d;
+	color: #24303e;
 }
 
 .button {
-	background-color: gray;
-	color: #c1c1c1;
+	background-color: #24303e;
+	color: #a2a5a8;
 	border: none;
 	border-radius: 6px;
 	padding: 10px 20px;

@@ -1,21 +1,20 @@
-// components/NavigationBar.js
+"use client"
 
 import Link from "next/link"
 import styles from "../styles/NavigationBar.module.css"
 import { useState, useEffect } from "react"
-import { useRouter } from "next/router"
-
+import { usePathname } from "next/navigation"
 function NavigationBar() {
+	const pathname = usePathname()
 	const [activeTab, setActiveTab] = useState("login")
-	const router = useRouter()
 
 	useEffect(() => {
-		if (router.pathname === "/login") {
+		if (pathname === "/login") {
 			setActiveTab("login")
-		} else if (router.pathname === "/register") {
+		} else if (pathname === "/register") {
 			setActiveTab("register")
 		}
-	}, [router.pathname])
+	}, [pathname])
 
 	return (
 		<nav

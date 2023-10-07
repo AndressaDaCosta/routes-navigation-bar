@@ -1,27 +1,26 @@
-// pages/register.js
-
-import Link from "next/link"
+import React from "react"
 import NavigationBar from "../components/NavigationBar"
+import Link from "next/link"
 import styles from "../styles/register.module.css"
 
-function Register() {
+const RegisterLayout = ({ children }: any) => {
 	return (
 		<div>
 			<header className={styles.header}>
-				<div className={styles.logoContainer}>
+				<div>
 					<Link href="/">
 						<button>
-							<h1>Imagem Logo</h1>
+							<h1>Logo</h1>
 						</button>
 					</Link>
 				</div>
 			</header>
-			<div className={styles.container}>
+			<main>
 				<NavigationBar />
-				<h2 className={styles.heading}>Cadastrar</h2>
-			</div>
+				{children}
+			</main>
 		</div>
 	)
 }
 
-export default Register
+export default RegisterLayout

@@ -1,7 +1,5 @@
-/* styles/Home.module.css */
-
 .header {
-	background-color: gray;
+	background-color: #333333;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -10,7 +8,7 @@
 
 .logoContainer {
 	flex-grow: 1;
-	color: black;
+	color: white;
 }
 
 .buttonContainer {
@@ -18,25 +16,23 @@
 	gap: 10px;
 }
 
+.buttonEntrar,
 .buttonCadastrar {
-	background-color: yellow;
-	color: #c1c1c1;
-	border: none;
 	border-radius: 4px;
 	padding: 10px 20px;
 	cursor: pointer;
 	text-decoration: none;
 	font-size: 16px;
 }
+.buttonCadastrar {
+	background-color: #f9c80d;
+	color: #c1c1c1;
+	border: none;
+}
 .buttonEntrar {
-	background-color: gray;
-	color: yellow;
-	border: 1px solid yellow;
-	border-radius: 4px;
-	padding: 10px 20px;
-	cursor: pointer;
-	text-decoration: none;
-	font-size: 16px;
+	background-color: #333333;
+	color: #f9c80d;
+	border: 1px solid #f9c80d;
 }
 
 .container {
@@ -45,11 +41,11 @@
 	align-items: center;
 	justify-content: center;
 	min-height: 100vh;
-	background-color: white;
+	background-color: #141b2d;
 }
 
 .heading {
 	font-size: 24px;
 	margin-top: 20px;
-	color: black;
+	color: white;
 }
